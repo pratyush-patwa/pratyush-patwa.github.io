@@ -1,34 +1,85 @@
-.outer{
-    background-color: #ccddff;
-    height: 2700px;
-    padding:4%;
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
 }
 
-.my-pic{
-    height:15%;
-    width :30%;
-    margin:-12% 30% 0% 35%;
+header {
+  background-color: #393e46;
+  padding: 1rem 2rem;
 }
 
-.thin-black-border{
-    border-color: #4da6ff;
-       border-width: 5%;
-        border-style: solid;
-    border-radius: 50% ;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00adb5;
 }
 
-.footer{
-    padding:2%; 
-    height:35%;
-    background-color:black;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-a:link, a:visited {
-  color: #4da6ff;
+.nav-links a {
+  text-decoration: none;
+  color: #eeeeee;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #222831, #393e46);
+  color: #eeeeee;
+}
+
+.hero span {
+  color: #00adb5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
 }
 
-a:hover {
-    color: green;
-  text-decoration: none;
+section {
+  padding: 4rem 2rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 1 1 300px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #222831;
+  color: #cccccc;
 }
