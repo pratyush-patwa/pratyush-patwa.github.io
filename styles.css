@@ -22,18 +22,18 @@ body.dark .card {
   background: rgba(30, 41, 59, 0.8);
 }
 body.dark .bar div {
-  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  background: linear-gradient(90deg, #a5b4fc, #c7d2fe);
 }
 body.dark .footer {
   background: #1e293b;
 }
 body.dark .social a {
-  color: #93c5fd;
+  color: #c7d2fe;
 }
 body.dark .section h2,
 body.dark .card h3,
 body.dark .skill span {
-  color: #e0f2fe;
+  color: #e0e7ff;
 }
 
 /* Dark Mode Toggle */
@@ -41,7 +41,7 @@ body.dark .skill span {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #2563eb;
+  background: #4f46e5;
   color: white;
   border: none;
   padding: 0.6rem 0.8rem;
@@ -52,16 +52,16 @@ body.dark .skill span {
   transition: background 0.3s;
 }
 .theme-toggle:hover {
-  background: #1d4ed8;
+  background: #4338ca;
 }
 body.dark .theme-toggle {
   background: #f1f5f9;
-  color: #1e3a8a;
+  color: #4f46e5;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
   color: white;
   text-align: center;
   padding: 5rem 2rem;
@@ -69,7 +69,7 @@ body.dark .theme-toggle {
   overflow: hidden;
 }
 body.dark .hero {
-  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  background: linear-gradient(135deg, #a5b4fc, #c7d2fe);
   color: #0f172a;
 }
 .hero-content {
@@ -91,7 +91,7 @@ body.dark .hero {
 /* Button */
 .btn {
   display: inline-block;
-  background: #2563eb;
+  background: #4f46e5;
   color: #fff;
   padding: 0.7rem 1.5rem;
   font-weight: 600;
@@ -101,11 +101,11 @@ body.dark .hero {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background: #1d4ed8;
+  background: #4338ca;
 }
 body.dark .btn {
   background: #f1f5f9;
-  color: #1e3a8a;
+  color: #4f46e5;
 }
 body.dark .btn:hover {
   background: #e2e8f0;
@@ -120,7 +120,7 @@ body.dark .btn:hover {
 .section h2 {
   font-size: 2.2rem;
   font-weight: 600;
-  border-bottom: 3px solid #2563eb;
+  border-bottom: 3px solid #4f46e5;
   display: inline-block;
   margin-bottom: 1.5rem;
 }
@@ -131,7 +131,7 @@ body.dark .btn:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #2563eb;
+  border: 5px solid #4f46e5;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   margin: 2rem auto;
@@ -150,7 +150,7 @@ body.dark .btn:hover {
 .card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
-  border-left: 5px solid #2563eb;
+  border-left: 5px solid #4f46e5;
   padding: 1.8rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -186,7 +186,7 @@ body.dark .btn:hover {
 }
 .bar div {
   height: 14px;
-  background: linear-gradient(90deg, #2563eb, #1e40af);
+  background: linear-gradient(90deg, #4f46e5, #4338ca);
   border-radius: 50px;
   width: 0;
   animation: fillBar 1.5s ease forwards;
@@ -212,7 +212,7 @@ body.dark .btn:hover {
   content: "\2713";
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: #4f46e5;
   font-weight: bold;
 }
 
@@ -234,8 +234,8 @@ body.dark .btn:hover {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
 }
 .contact-form .btn {
   align-self: flex-start;
@@ -255,13 +255,13 @@ body.dark .btn:hover {
 }
 .footer .social a {
   margin: 0 0.75rem;
-  color: #2563eb;
+  color: #4f46e5;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 .footer .social a:hover {
-  color: #82caff;
+  color: #a5b4fc;
   text-decoration: underline;
 }
 .footer p {
