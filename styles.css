@@ -41,7 +41,7 @@ body.dark .skill span {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #4da6ff;
+  background: #2563eb;
   color: white;
   border: none;
   padding: 0.6rem 0.8rem;
@@ -52,17 +52,25 @@ body.dark .skill span {
   transition: background 0.3s;
 }
 .theme-toggle:hover {
-  background: #0077cc;
+  background: #1d4ed8;
+}
+body.dark .theme-toggle {
+  background: #f1f5f9;
+  color: #1e3a8a;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #4da6ff, #005f99);
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
   color: white;
   text-align: center;
   padding: 5rem 2rem;
   position: relative;
   overflow: hidden;
+}
+body.dark .hero {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  color: #0f172a;
 }
 .hero-content {
   position: relative;
@@ -79,10 +87,12 @@ body.dark .skill span {
   opacity: 0.95;
   margin-bottom: 1.5rem;
 }
+
+/* Button */
 .btn {
   display: inline-block;
-  background: white;
-  color: #005f99;
+  background: #2563eb;
+  color: #fff;
   padding: 0.7rem 1.5rem;
   font-weight: 600;
   border-radius: 30px;
@@ -91,8 +101,14 @@ body.dark .skill span {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background: #e0f2fe;
-  color: #003f66;
+  background: #1d4ed8;
+}
+body.dark .btn {
+  background: #f1f5f9;
+  color: #1e3a8a;
+}
+body.dark .btn:hover {
+  background: #e2e8f0;
 }
 
 /* Section Base */
@@ -104,7 +120,7 @@ body.dark .skill span {
 .section h2 {
   font-size: 2.2rem;
   font-weight: 600;
-  border-bottom: 3px solid #4da6ff;
+  border-bottom: 3px solid #2563eb;
   display: inline-block;
   margin-bottom: 1.5rem;
 }
@@ -115,7 +131,7 @@ body.dark .skill span {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #4da6ff;
+  border: 5px solid #2563eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   margin: 2rem auto;
@@ -134,7 +150,7 @@ body.dark .skill span {
 .card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
-  border-left: 5px solid #4da6ff;
+  border-left: 5px solid #2563eb;
   padding: 1.8rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
@@ -170,7 +186,7 @@ body.dark .skill span {
 }
 .bar div {
   height: 14px;
-  background: linear-gradient(90deg, #4da6ff, #005f99);
+  background: linear-gradient(90deg, #2563eb, #1e40af);
   border-radius: 50px;
   width: 0;
   animation: fillBar 1.5s ease forwards;
@@ -196,7 +212,7 @@ body.dark .skill span {
   content: "\2713";
   position: absolute;
   left: 0;
-  color: #4da6ff;
+  color: #2563eb;
   font-weight: bold;
 }
 
@@ -218,8 +234,8 @@ body.dark .skill span {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #4da6ff;
-  box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.3);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
 }
 .contact-form .btn {
   align-self: flex-start;
@@ -239,7 +255,7 @@ body.dark .skill span {
 }
 .footer .social a {
   margin: 0 0.75rem;
-  color: #4da6ff;
+  color: #2563eb;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
