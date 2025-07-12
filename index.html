@@ -133,43 +133,30 @@
     });
   </script>
  <script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbyYM4sgz8firn0IcEv8Si1jGGdT6H49hjiQnc3bJi3lDsWPRkGhzdoGat65femY5Su8/exec";
-const form = document.getElementById("contactForm");
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyYM4sgz8firn0IcEv8Si1jGGdT6H49hjiQnc3bJi3lDsWPRkGhzdoGat65femY5Su8/exec";
+  const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  const formData = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  };
+    const formData = new FormData(form);
 
-  fetch(scriptURL, {
-    method: "POST",
-    body: JSON.stringify(formData),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-  .then(response => {
-    if (!response.ok) throw new Error("Fetch failed");
-    return response.json();
-  })
-  .then(data => {
-    if (data.result === "success") {
+    fetch(scriptURL, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to submit");
       alert("✅ Thank you for contacting me!");
       form.reset();
-    } else {
-      alert("❌ Something went wrong. Please try again.");
-    }
-  })
-  .catch(error => {
-    alert("❌ Error: " + error.message);
-    console.error("Submission error:", error);
+    })
+    .catch(error => {
+      alert("❌ Submission failed. Please try again later.");
+      console.error("Error:", error);
+    });
   });
-});
 </script>
+
 
 </body>
 </html>
