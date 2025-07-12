@@ -133,7 +133,7 @@
     });
   </script>
  <script>
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyYM4sgz8firn0IcEv8Si1jGGdT6H49hjiQnc3bJi3lDsWPRkGhzdoGat65femY5Su8/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwNVA6K627euFyd3dtaapxM_k7vEVhvnG7C8APAqQsqSyzU7-k16sAr4Y9Uqh681EYFAQ/exec";
   const form = document.getElementById("contactForm");
 
   form.addEventListener("submit", (e) => {
@@ -146,16 +146,17 @@
       body: formData
     })
     .then(response => {
-      if (!response.ok) throw new Error("Failed to submit");
-      alert("✅ Thank you for contacting me!");
+      if (!response.ok) throw new Error("Failed to send message.");
+      alert("✅ Thank you! Your message has been sent.");
       form.reset();
     })
     .catch(error => {
-      alert("❌ Submission failed. Please try again later.");
-      console.error("Error:", error);
+      alert("❌ Something went wrong. Please try again later.");
+      console.error("Error!", error.message);
     });
   });
 </script>
+
 
 
 </body>
